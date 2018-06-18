@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Picker" customModule="Controls">
+            <connections>
+                <outlet property="closeButton" destination="f2S-sl-t1e" id="j1S-gl-Cp7"/>
+                <outlet property="picker" destination="80Y-v4-mX1" id="wGv-yG-I5m"/>
+                <outlet property="pickerStackView" destination="ALm-9h-8LC" id="9cf-Aj-MCO"/>
+                <outlet property="pickerView" destination="Tda-M8-HjY" id="hgI-14-ppz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="230"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ALm-9h-8LC" userLabel="Picker StackView">
+                    <rect key="frame" x="27" y="0.0" width="320" height="230"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tda-M8-HjY" userLabel="Picker View">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="230"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Y1w-QT-oDa" userLabel="Picker and Close Button Stack">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="80Y-v4-mX1">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="180" id="MOu-vd-pBi"/>
+                                            </constraints>
+                                        </pickerView>
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2S-sl-t1e" userLabel="Close Unit Picker View Button">
+                                            <rect key="frame" x="0.0" y="190" width="320" height="30"/>
+                                            <state key="normal" title="Select"/>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="230" id="KNW-y5-e4Z"/>
+                                <constraint firstAttribute="width" constant="320" id="dcm-8w-q1C"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                    <color key="value" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Tda-M8-HjY" firstAttribute="top" secondItem="ALm-9h-8LC" secondAttribute="top" id="I4X-b5-8QH"/>
+                        <constraint firstItem="Tda-M8-HjY" firstAttribute="centerY" secondItem="ALm-9h-8LC" secondAttribute="centerY" id="JTq-TK-Ag4"/>
+                        <constraint firstAttribute="bottom" secondItem="Tda-M8-HjY" secondAttribute="bottom" id="Nv4-7y-XHc"/>
+                        <constraint firstItem="Tda-M8-HjY" firstAttribute="centerX" secondItem="ALm-9h-8LC" secondAttribute="centerX" id="aNv-qZ-0v7"/>
+                        <constraint firstAttribute="trailing" secondItem="Tda-M8-HjY" secondAttribute="trailing" id="uvJ-ak-Wo9"/>
+                        <constraint firstItem="Tda-M8-HjY" firstAttribute="leading" secondItem="ALm-9h-8LC" secondAttribute="leading" id="zL1-2Z-NeL"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="114" y="-233"/>
+        </view>
+    </objects>
+</document>
